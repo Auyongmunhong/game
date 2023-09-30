@@ -6029,3 +6029,5 @@ Library/SourceAssetDB
 Library/SourceAssetDB-lock
 Library/SpriteAtlasDatabase.asset
 Library/Style.catalog
+*.graph
+Assets/Resources/BillingMode.json.meta
