@@ -17,7 +17,7 @@ using UnityEngine;
 //
 // Now run the example.
 
-public class Example : MonoBehaviour
+public class npc : MonoBehaviour
 {
     // Adjust the speed for the application.
     public float speed = 1.0f;
