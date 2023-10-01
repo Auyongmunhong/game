@@ -14,7 +14,13 @@ public class character : MonoBehaviour
 
    bool isJumping;
 
-   void Start(){
+   public GameObject hp;
+   public float maxHp;
+   float currentHp;
+
+   void Start()
+   {
+        currentHp = maxHp;
         myScale = transform. localScale;
         scaleX = myScale.x;
    }
@@ -80,5 +86,22 @@ public class character : MonoBehaviour
         {
             
         }
+    }
+
+    public void DeductHP(int deductedHP)
+    {
+
+        currentHp -= deductedHP;
+
+        if (currentHp <= 0)
+        {
+            currentHp = 0;
+            return;
+        }
+
+        currentHp -= deductedHP;
+        
+        //health bar
+        hp.transform.localScale = new Vector2(currentHp / maxHp, 1);
     }
 }
