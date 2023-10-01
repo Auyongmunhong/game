@@ -14,9 +14,6 @@ public class character : MonoBehaviour
 
    bool isJumping;
 
-public GameObject target;
-public bool isChat;
-
    void Start(){
         myScale = transform. localScale;
         scaleX = myScale.x;
