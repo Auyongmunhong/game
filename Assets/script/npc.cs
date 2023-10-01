@@ -17,7 +17,7 @@ using UnityEngine;
 //
 // Now run the example.
 
-public class Example : MonoBehaviour
+public class npc : MonoBehaviour
 {
     // Adjust the speed for the application.
     public float speed = 1.0f;
@@ -36,7 +36,6 @@ public class Example : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.001f)
         {
             // Swap the position of the cylinder.
-        
         }
     }
 }
