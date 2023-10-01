@@ -36,7 +36,7 @@ public class Example : MonoBehaviour
         if (Vector3.Distance(transform.position, target.position) < 0.001f)
         {
             // Swap the position of the cylinder.
-            target.position *= 0.0f;
+        
         }
     }
 }
