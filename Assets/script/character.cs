@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class character : MonoBehaviour
@@ -88,6 +89,19 @@ public class character : MonoBehaviour
         }
     }
 
+  void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.name == "box")
+        {
+
+        }
+
+        if(col.gameObject.tag == "Enemy")
+        {
+            DeductHP(1);
+        }
+    }
+
     public void DeductHP(int deductedHP)
     {
 
@@ -100,8 +114,10 @@ public class character : MonoBehaviour
         }
 
         currentHp -= deductedHP;
-        
+
         //health bar
         hp.transform.localScale = new Vector2(currentHp / maxHp, 1);
+
     }
+
 }
